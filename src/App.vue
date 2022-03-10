@@ -1,20 +1,19 @@
 <template>
-
 <div id="app">
 
-    <div class="navBar">
+    <!-- <div class="navBar">
 
-    <input class="searcBar" placeholder="Search Lesson" icon="search" @keyup="productsFetch" v-model="filter">
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Clients</a>
-        <a href="#">Contact</a>
-    </div>
-    <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+        <input class="searcBar" placeholder="Search Lesson" icon="search" @keyup="productsFetch" v-model="filter">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
-</div>
+    </div> -->
     <p>
         <input v-on:click="defaultClick" type="radio" id="default" value="default" v-model="filterName">
         <label for="default">Default</label>
@@ -130,7 +129,7 @@ export default {
             this.sort = ""
 
         },
-       
+
     },
     computed: {
 
@@ -237,14 +236,13 @@ export default {
     width: 80%;
 }
 
-#app > div.navBar {
+#app>div.navBar {
     background-color: greenyellow;
     margin-top: -16px;
     width: 1000px;
     height: 150px;
     margin-left: -20px;
 }
-
 
 .searcBar {
     display: flex;
